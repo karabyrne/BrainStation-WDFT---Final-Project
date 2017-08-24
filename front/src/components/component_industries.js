@@ -24,7 +24,7 @@ class Industries extends React.Component {
         console.log("getIndustries ran");
         const self = this
         console.log("worked");
-        axios.get('http://localhost:8080/api/v1/professions')
+        axios.get('/api/v1/professions')
             .then(function (response) {
                 self.setState({
                     industries: response.data

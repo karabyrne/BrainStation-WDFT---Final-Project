@@ -18,10 +18,7 @@ class Blog extends React.Component {
                         <h1>Learn to do something you love</h1>
                     </div>
                 </div>
-                {/* <div className="blogPost">
-                    <h2>Finding "The One"</h2>
-                    <h4>The subtle art of not settling</h4>
-                </div> */}
+
                 <Card>
                     <div className="card col-xs-12 col-sm-8 col-sm-offset-2">
                         <CardHeader

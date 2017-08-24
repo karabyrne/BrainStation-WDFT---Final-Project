@@ -41,13 +41,13 @@ class ProfessionDetails extends React.Component {
         console.log("getProfessions ran");
         const self = this
         console.log("worked");
-        axios.get('http://localhost:8080/api/v1/professions/' + this.props.params.industry + '/' + this.props.params.name)
+        axios.get('/api/v1/professions/' + this.props.params.industry + '/' + this.props.params.name)
             .then(function (response) {
                 console.log("professions call =", response.data);
                 self.setState({
                     professionDetails: response.data
                 })
-                axios.get("http://localhost:8080/api/v1/education/" + response.data.education)
+                axios.get("/api/v1/education/" + response.data.education)
                     .then(function (response) {
                         console.log("education call =", response.data);
                         self.setState({

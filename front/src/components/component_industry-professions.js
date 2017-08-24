@@ -4,22 +4,6 @@ import { Link } from 'react-router';
 import Paper from 'material-ui/Paper';
 
 
-
-// import ProfessionListGenerator from './component_profession-list-generator.js'
-
-// const professionsByIndustry = [
-//     {label: "Doctor", slug: "doctor"},
-//     {label: "Lawyer", slug: "lawyer"},
-//     {label: "Teacher", slug: "teacher"},
-//     {label: "Firefighter", slug: "firefighter"},
-//     {label: "Police Officer", slug: "police-officer"},
-//     {label: "Financial Advisor", slug: "financial-advisor"},
-//     {label: "Professor", slug: "professor"},
-//     {label: "Marketing Manager", slug: "marketing-manager"},
-// ]
-
-
-
 class IndustryProfessions extends React.Component {
 
     constructor() {
@@ -37,7 +21,7 @@ class IndustryProfessions extends React.Component {
         console.log("getProfessions ran");
         const self = this
         console.log("worked");
-        axios.get('http://localhost:8080/api/v1/professions/' + this.props.params.industry)
+        axios.get('/api/v1/professions/' + this.props.params.industry)
             .then(function (response) {
                 console.log(response.data);
                 self.setState({

@@ -1,10 +1,5 @@
 import React from 'react';
-// import IconMenu from 'material-ui/IconMenu';
-// import IconButton from 'material-ui/IconButton';
-// import FontIcon from 'material-ui/FontIcon';
-// import NavigationExpandMoreIcon from 'material-ui/svg-icons/navigation/expand-more';
 import MenuItem from 'material-ui/MenuItem';
-// import DropDownMenu from 'material-ui/DropDownMenu';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Toolbar, ToolbarGroup, ToolbarSeparator } from 'material-ui/Toolbar';
 import { Link } from 'react-router';
@@ -23,15 +18,6 @@ const toolbarFont = {
   textShadow: "0.5px 0.5px 1px #1A1919"
 }
 
-// const raisedButton = {
-//   color: "#F93434",
-// }
-
-// const buttonStyle = {
-//   background: "white",
-//   color: "black",
-// }
-
 
 export default class ToolbarExamplesSimple extends React.Component {
 
@@ -48,7 +34,6 @@ export default class ToolbarExamplesSimple extends React.Component {
     return (
       <div>
         <Toolbar style={toolbarStyle}>
-          {/* <Link to="/professions">testlink</Link> */}
 
           <ToolbarGroup firstChild={true}>
            <MenuItem
@@ -71,19 +56,13 @@ export default class ToolbarExamplesSimple extends React.Component {
               primaryText="Blog"
               style={toolbarFont}
             />
-            {/* <MenuItem primaryText="Home" href="/" /> */}
-            {/* <MenuItem primaryText="About" href="/about" />
-            <MenuItem primaryText="Professions" href="/professions" />
-            <MenuItem primaryText="Blog" href="/blog" /> */}
           </ToolbarGroup>
           <ToolbarGroup>
-            {/* <FontIcon className="muidocs-icon-custom-sort" /> */}
             <ToolbarSeparator />
             <RaisedButton
               className="raisedButton"
               label="Get Started"
               primary={true}
-              //linkButton={true}
               href="/professions"
               containerElement={<Link to="/professions" />}
             />
