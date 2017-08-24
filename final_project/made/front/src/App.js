@@ -32,31 +32,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/blog" component={Blog} />
           </Route> 
-
-
-          {/* react-router 4: */}
-
-          {/* <div>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/professions">Professions</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-            </ul> 
-
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/professions" component={Industries} />
-              <Route path="/professions/:industry/:name" component={ProfessionDetails} />
-              <Route path="/professions/:industry" component={IndustryProfessions} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/blog" component={Blog} />
-            </Switch>
-            
-          </div> */}
         </Router>
-
-          {/* {React.cloneElement(this.props.children, )} */}
 
       </div>
     );
