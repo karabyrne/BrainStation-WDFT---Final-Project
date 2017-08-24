@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'front/build', 'index.html'));
   });
 
-mongoose.connect('mongodb://localhost:27017/careers');
+mongoose.connect(process.env.MONGODB_URI  || 'mongodb://localhost:27017/careers');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
