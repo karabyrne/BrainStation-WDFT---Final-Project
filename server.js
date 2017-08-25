@@ -164,6 +164,38 @@ app.post('/api/v1/professions/healthcare', (req, res) => {
         });
 })
 
+app.post('/api/v1/professions/legal', (req, res) => {
+    console.log(req.body);
+
+    const IndustryProfession = new Profession(req.body);
+
+    IndustryProfession.save()
+        .then(savedProfession => {
+            console.log(savedProfession);
+            res.json(savedProfession);
+        })
+        .catch(err => {
+            console.log(err);
+            res.json(err);
+        });
+})
+
+app.post('/api/v1/professions/marketing', (req, res) => {
+    console.log(req.body);
+
+    const IndustryProfession = new Profession(req.body);
+
+    IndustryProfession.save()
+        .then(savedProfession => {
+            console.log(savedProfession);
+            res.json(savedProfession);
+        })
+        .catch(err => {
+            console.log(err);
+            res.json(err);
+        });
+})
+
 app.post('/api/v1/professions', (req, res) => {
     console.log(req.body);
 
