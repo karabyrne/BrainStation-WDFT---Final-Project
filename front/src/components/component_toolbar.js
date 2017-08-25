@@ -32,7 +32,7 @@ export default class ToolbarExamplesSimple extends React.Component {
 
   render() {
     return (
-      <div>
+      <div >
         <Toolbar style={toolbarStyle}>
 
           <ToolbarGroup firstChild={true}>
